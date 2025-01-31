@@ -5,7 +5,14 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
-    font-size: 35px;;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    font-size: 35px;
+}
+
+header{
+    border-bottom: solid 5px wheat;
+    margin-bottom: 50px;
 }
 
 .adendo {
@@ -22,6 +29,17 @@ body {
 
 .disclaimer{
     font-size: 20px;
-    border: 100px;
-    padding: 100px;
+}
+
+.dices button {
+    background: none;
+    border: none;
+}
+
+.dices button:hover {
+    cursor: pointer;
+}
+
+.dices img{
+    width: 20px;
 }
