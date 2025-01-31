@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventure-se</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <header>Ordo Dungueons
+            <div class="dices">
+                <button id="D20" class="dados">
+                    <img src="img/dados/imgD20.png" alt="DadoD20">
+                </button>
+                <button id="D12" class="dados">
+                    <img src="img/dados/imgD12.png" alt="DadoD12">
+                </button>
+                <button id="D10" class="dados">
+                    <img src="img/dados/imgD10.png" alt="DadoD10">
+                </button>
+                <button id="D8" class="dados">
+                    <img src="img/dados/imgD8.png" alt="DadoD8">
+                </button>
+                <button id="D6" class="dados">
+                    <img src="img/dados/imgD6.png" alt="DadoD6">
+                </button>
+                <button id="D4" class="dados">
+                    <img src="img/dados/imgD4.png" alt="DadoD4">
+                </button>
+                <h1 id="resultado"></h1>
+            </div>
+        </header>
+        <div class="tela ativa" id="menu">
+            <p>Bem vindo a uma nova forma de jogar Ordem Paranormal!
+                Será que você tem capacidade de superar esse desafio!?
+            </p>
+            <button class="b" prox="disclaimer5">Nex 5%</button>
+            <button class="b" prox="disclaimer25">Nex 25%</button>
+            <button>Nex 50%</button>
+            <button>Nex 75%</button>
+            <button>Nex 99%</button>
+
+            <p>Precisa de ajuda com as classes?</p>
+            <button class="b" prox="combatente">Combatente</button>
+            <button class="b" prox="Ocultista">Ocultista</button>
+            <button class="b" prox="Especialista">Especialista</button>
+
+            <p class="adendo">É recomendado o uso das fichas originais de Ordem Paranormal ou o site do CRIS</p>
+
+        </div>
+
+        <div class="tela" id="combatente">
+            <p><img src="img/Combatente.png" alt="Progressão Combatente">
+            </p>
+            <button class="b" prox="menu">Voltar</button>
+        </div>
+
+        <div class="tela" id="Ocultista">
+            <p><img src="img/Ocultisa.png" alt="Progressão Ocultista">
+            </p>
+            <button class="b" prox="menu">Voltar</button>
+        </div>
+
+        <div class="tela" id="Especialista">
+            <p>
+                <img src="img/Especialista.png" alt="Progressão Especialista">
+            </p>
+            <button class="b" prox="menu">Voltar</button>
+        </div>
+
+        <div class="tela disclaimer" id="disclaimer5">
+            <h1>Sala 1</h1>
+            <p> 1 - 5 = Esqueleto de lodo </p>
+            <p> 6- 15 = Bandido </p>
+            <p> 16 - 20 = *Prêmio* Punhal</p>
+
+            <h1>Sala 2</h1>
+            <p> 1 - 3 = 2 Zumbi de sangue </p>
+            <p> 4 - 7 = 2 Esqueletos de lodo </p>
+            <p> 8 - 13 = 3 Bandidos </p>
+            <p> 14 - 20 = *Prêmio* Revólver</p>
+
+            <h1>Sala 3</h1>
+            <p> 1 - 5 = 2 Zumbi de sangue </p>
+            <p> 6 - 15 = 5 Bandidos </p>
+            <p> 16 - 20 = 3 Bandidos</p>
+
+            <h1> Sala 4</h1>
+            <p> 1 - 3 = 3 Zumbi de sangue </p>
+            <p> 4 - 7 = 3 Esqueleto de lodo </p>
+            <p> 8 - 10 = 5 Bandidos </p>
+            <p> 11 - 14 = 3 Capanga </p>
+            <p> 15 - 17 = *Prêmio* Proteção Leve, Amaldiçoar Arma </p>
+            <p> 18 - 20 = *Prêmio* Maça, Pistola, Cicatrização </p>
+
+            <h1> Sala 5 </h1>
+            <p> 1 - 5 = Pistola, Punhal </p>
+            <p> 6 - 10 = Revólver, Cicatrização </p>
+            <p> 11 - 15 = Maça, Proteção Leve, Amaldiçoar Arma </p>
+            <p> 16 - 19 = Revólver, Proteção leve, Amaldiçoar Arma </p>
+            <p> 20 = Pistola, Amaldiçoar Arma, Cicatrização, Definhar</p>
+
+            <h1> BOSS </h1>
+            <p>**Onça-Pintada** </p>
+
+            <p>*Prêmio* Proteção Leve, Cicatrização, Definhar</p>
+            <button class="b" prox="menu">Voltar</button>
+        </div>
+
+        <div class="tela disclaimer" id="disclaimer25">
+            <h1>Decidir Tipo da Dungeon</h1>
+            <p>1 = Sangue</p>
+            <p>2 = Morte</p>
+            <p>3 - 4 = Realidade</p>
+
+            <button class="b" prox="sangue25">Sangue</button>
+            <button class="b" prox="morte25">Morte</button>
+            <button class="b" prox="realidade25">Realidade</button>
+        </div>
+
+        <div class="tela disclaimer" id="sangue25">
+            <h1>Sala 1</h1>
+            <p> 1 - 10 = Zumbi de sangue </p>
+            <p> 11 - 15 = *Prêmio* Katana </p>
+            <p> 16 - 20 = *Prêmio* Cicatrizante</p>
+
+            <h1>Sala 2</h1>
+            <p> 1 - 3 = Aberração de Carne </p>
+            <p> 4 - 10 = 2 Zumbi de Sangue </p>
+            <p> 11 - 15 = 3 Zumbi de Sangue </p>
+            <p> 16 - 20 = *Prêmio* Cicatrizante, Machado</p>
+
+            <h1>Sala 3</h1>
+            <p> 1 - 5 = Aberração de Carne </p>
+            <p> 6 - 14 = 2 Zumbi de Sangue </p>
+            <p> 15 - 20 = 3 Zumbi de Sangue</p>
+
+            <h1> Sala 4</h1>
+            <p> 1 = 2 Aberração de Carne </p>
+            <p> 2 - 7 = Aberração de Carne </p>
+            <p> 8 - 13 = 3 Zumbi de Sangue </p>
+            <p> 14 - 19 = *Prêmio* Cicatrizante, Armadura de Sangue </p>
+            <p> 20 = *Prêmio* Cicatrizante, Fuzil de caça, Arma Atroz </p>
+
+            <h1> Sala 5 </h1>
+            <p> 1 - 5 = Fuzil de Caça, Machado, Katana </p>
+            <p> 6 - 10 = Cicatrizante, Espingarda, Armadura de Sangue </p>
+            <p> 11 - 15 = Cicatrizante, Arma Atroz, Armadura de Sangue </p>
+            <p> 16 - 20 = Cicatrizante, Espingarda, Armadura de Sangue, Descarnar </p>
+
+            <h1> BOSS </h1>
+            <p>**Mulher Afogada** </p>
+
+            <p>*Prêmio* Espingarda, Armadura de Sangue</p>
+
+            <button class="b" prox="disclaimer25">Voltar</button>
+        </div>
+
+        <div class="tela disclaimer" id="morte25">
+            <h1>Sala 1</h1>
+            <p> 1 - 10 = Esqueleto de lodo </p>
+            <p> 11 - 15 = *Prêmio* Florete </p>
+            <p> 16 - 20 = *Prêmio* Cicatrizante</p>
+
+            <h1>Sala 2</h1>
+            <p> 1 - 5 = Succ </p>
+            <p> 6 - 15 = 2 Esqueleto de lodo </p>
+            <p> 16 - 20 = *Prêmio* Lança </p>
+
+            <h1>Sala 3</h1>
+            <p> 1 - 5 = succ </p>
+            <p> 6 - 10 = 2 Esqueletos de lodo </p>
+            <p> 11 - 18 = 3 esqueletos de lodo</p>
+            <p> 19 - 10 = esqueleto de lodo</p>
+
+            <h1> Sala 4</h1>
+            <p> 1 - 5 = 2 Succ </p>
+            <p> 6 - 10 = Succ </p>
+            <p> 11 - 15 = 3 Esqueletos de lodo </p>
+            <p> 16 - 20 = *Prêmio* Florete, cicatrizante, Espirais da Perdição </p>
+
+            <h1> Sala 5 </h1>
+            <p> 1 - 5 = Gadanho, Lança </p>
+            <p> 6 - 10 = Cicatrizantes, Florete, Espirais da Perdição </p>
+            <p> 11 - 15 = Cicatrizantes, Espirais da Perdição, Decadência </p>
+            <p> 16 - 20 = Cicatrizantes, Gadanho, Espirais da Perdição, Decadência </p>
+
+            <h1> BOSS </h1>
+            <p>**Enraizado** </p>
+
+            <p>*Prêmio* Cicatrizante, Decadência</p>
+
+            <button class="b" prox="disclaimer25">Voltar</button>
+        </div>
+
+        <div class="tela disclaimer" id="realidade25">
+            <h1>Sala 1</h1>
+            <p> 1 - 7 = Policial de Elite </p>
+            <p> 8 - 15 = Assassino </p>
+            <p> 16 - 20 = *Prêmio* Katana </p>
+
+            <h1>Sala 2</h1>
+            <p> 1 - 5 = Policial de Elite </p>
+            <p> 6 - 10 = 2 Soldado de Aluguel </p>
+            <p> 11 - 15 = Soldado de Aluguel </p>
+            <p> 16 - 20 = *Prêmio* Proteção Pesada </p>
+
+            <h1>Sala 3</h1>
+            <p> 1 - 7 = 2 Policial de Elite </p>
+            <p> 8 - 12 = 2 Soldado de aluguel </p>
+            <p> 13 - 16 = 2 Assassino </p>
+            <p>17 - 20 = Soldado de Aluguel </p>
+
+            <h1> Sala 4</h1>
+            <p> 1 - 5 = 2 Asssassino </p>
+            <p> 6 - 10 = 2 Soldado de Aluguel </p>
+            <p> 11 - 15 = *Prêmio* Proteção Pesada, Fuzil de Assalto </p>
+            <p> 16 - 20 = *Prêmio* Proteção Pesada, submetralhadora, Katana </p>
+
+            <h1> Sala 5 </h1>
+            <p> 1 - 5 = Granada de Fragmentação </p>
+            <p> 6 - 10 = Proteção Pesada, Katana </p>
+            <p> 11 - 15 = Granada de Fragmentação, Submetralhadora </p>
+            <p> 16 - 20 = Fuzil de Assalto, Katana </p>
+
+            <h1> BOSS </h1>
+            <p>**Lider do Culto** </p>
+
+            <p>*Premio* Proteção Pesada, Fuzil de Assalto, Granada de Fragmentação</p>
+
+            <button class="b" prox="disclaimer25">Voltar</button>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+    <script src="sim-dices.js"></script>
+</body>
+
+</html>
